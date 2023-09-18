@@ -1,0 +1,186 @@
+#redux-header {
+    border: none !important;
+    background: #191b1d !important
+}
+
+.toplevel_page_pe-redux_options #wpcontent {
+    padding-left: 0
+}
+
+.wrap.redux-wrap-div {
+    margin-left: 0;
+    margin-top: -18px;
+}
+
+.redux-container .ui-button,
+.control-section-redux .ui-button,
+.control-panel-redux .ui-button,
+.redux-metabox .ui-button {
+    background: #ebebeb !important;
+    border-radius: 0 !important;
+    padding: 15px 35px;
+    font-size: 13px;
+}
+
+.redux-container .ui-buttonset .ui-state-active,
+.control-section-redux .ui-buttonset .ui-state-active,
+.control-panel-redux .ui-buttonset .ui-state-active,
+.redux-metabox .ui-buttonset .ui-state-active {
+    background: #191b1d !important;
+    color: #fff !important;
+    border-color: #191b1d !important;
+    box-shadow: none !important;
+}
+
+.redux-sidebar .redux-group-menu li {
+    background: #191b1d;
+    border-top: 1px solid;
+}
+
+.redux-container .redux-sidebar .redux-group-menu li a {
+    padding: 15px 4px 15px 14px;
+}
+
+.redux-container .redux-sidebar .redux-group-menu li.active a {
+    background: #ebebeb !important;
+    color: #191b1d !important;
+}
+
+.redux-container .redux-sidebar .redux-group-menu li a:hover {
+    background: #ebebeb !important;
+    color: #191b1d !important
+}
+
+.redux-container .redux-group-tab h3 {
+    border: none !important
+}
+
+div#section-archive-post {
+    margin-top: 25px
+}
+
+.redux-container-switch .switch-options label {
+    padding: 5px 15px;
+    margin: 0 !important;
+    position: relative;
+    z-index: 2;
+    background: none !important;
+    border: none !important;
+    transition: color .2s ease, opacity .2s ease;
+    opacity: .4
+}
+
+.redux-container-switch .cb-enable.selected {
+    background: none !important;
+    border: none !important;
+    color: #fff;
+    box-shadow: none !important;
+    opacity: 1
+}
+
+
+
+.redux-container-switch .switch-options {
+    min-height: 30px;
+    margin-right: 0 !important;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0;
+    background: #ebebeb;
+    border-radius: 20px;
+}
+
+.redux-container-switch .switch-options::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #191b1d;
+    border-radius: 20px;
+    transition: transform .3s ease;
+}
+
+.switch-options.sw-disabled::after {
+    transform: translateX(100%)
+}
+
+.switch-options.sw-enabled::after {
+    transform: translateX(0%)
+}
+
+.redux-container-switch .cb-disable.selected {
+    color: #fff;
+    background: none !important;
+    opacity: 1
+}
+
+.block-editor .edit-post-sidebar .acf-fields > .acf-field {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+li.redux-image-select {
+    width: 47%;
+    display: block;
+    float: left;
+    box-sizing: content-box;
+}
+
+li.redux-image-select:first-child {
+    margin-right: 3% !important;
+}
+
+div#\31 _section_group th {
+    display: none !important
+}
+
+.redux-image-select span {
+    color: #000;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: -0.03em;
+}
+
+.redux-image-select {
+    background: none !important
+}
+
+.wp-core-ui .redux-container .button,
+.wp-core-ui .redux-container .button-secondary {
+    border-color: #191b1d !important;
+    color: #191b1d !important;
+}
+
+.wp-core-ui .redux-container .button-primary {
+    color: #fff !important;
+    background: #191b1d !important;
+}
+
+.redux-container .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a {
+    background-color: #fff !important;
+    color: #191b1d !important;
+}
+
+.redux-container .redux-sidebar .redux-group-menu li .subsection .redux-group-tab-link-li .redux-group-tab-link-a:hover {
+    color: #fff !important
+}
+
+.redux-container .redux-sidebar .redux-group-menu li.active a:hover {
+    color: unset !important
+}
+
+.redux-container-multi_text a.redux-multi-text-remove.deletion {
+    color: #878787;
+    font-size: 12px;
+}
+
+.redux-container-multi_text a.redux-multi-text-remove.deletion:hover {
+    color: #000;
+    background: none !important;
+    text-decoration: underline;
+}
