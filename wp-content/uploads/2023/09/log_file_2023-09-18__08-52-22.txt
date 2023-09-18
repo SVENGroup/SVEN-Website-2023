@@ -1,0 +1,44 @@
+
+---Downloaded files---
+The import files for: Alioth Light were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = https://localhost/SVEN-Website-2023
+Data file = C:\xampp\htdocs\SVEN-Website-2023/wp-content/uploads/2023/09/demo-content-import-file_2023-09-18__08-52-22.xml
+Widget file = C:\xampp\htdocs\SVEN-Website-2023/wp-content/uploads/2023/09/demo-widgets-import-file_2023-09-18__08-52-22.json
+Customizer file = C:\xampp\htdocs\SVEN-Website-2023/wp-content/uploads/2023/09/demo-customizer-import-file_2023-09-18__08-52-22.dat
+Redux files:
+pe-redux -> C:\xampp\htdocs\SVEN-Website-2023/wp-content/uploads/2023/09/demo-redux-import-file_0-2023-09-18__08-52-22.json 
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Block - No Title - Imported
+
+Shop Sidebar : 
+
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+Footer Left Widget : 
+
+Block - No Title - Widget already exists
+
+Footer Right Widget : 
+
+Block - No Title - Widget already exists
+
+
+
+---Importing Redux settings---
+Redux settings import for: pe-redux finished successfully!
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
