@@ -243,23 +243,28 @@ $dataSecondColor =  $option['classic_menu_dark_item_hover_color'];
 
                         <!-- Menu Widget (Left) -->
                         <div class="menu-widget menu-widget-left">
-                            <?php if ($option['fs_left_widget'] === 'social-connects') { ?>
                             <ul class="social-list">
-
-                                <?php $socials = $option['social-connects']; 
-                        
-                           foreach ($socials as $social) { ?>
-
-                                <li><a target="_blank" href="#."><?php echo esc_html($social); ?></a></li>
-
-                                <?php } ?>
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/thecurrentcon/">
+                                        The<span style="margin-left: 5px;">Current</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/thesvengroup/">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/svengroup/?hl=en">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://ph.linkedin.com/company/svengroup">
+                                        LinkedIn
+                                    </a>
+                                </li>
                             </ul>
-
-                            <?php } elseif ($option['fs_left_widget'] === 'custom') { 
-                                
-                                echo do_shortcode($option['fs_left_custom']);
-                       } ?>
-
                         </div>
                         <!-- /Menu Widget (Left) -->
 
