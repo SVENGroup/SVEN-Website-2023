@@ -15,6 +15,7 @@ $bottomLeftWidget = 'none';
 $bottomRightWidget = 'none';
 $footer_layout = '';
 $smoothScroll = 'false';
+$uploads = wp_upload_dir();
 
 if (class_exists('Redux')) {
     $footerLogo = $option['footer_logo'];
@@ -40,19 +41,12 @@ if (class_exists('Redux')) {
             <?php if ($footerLogo) { ?>
             <!-- Footer Logo -->
             <div class="footer-logo">
-                <img src="<?php echo esc_attr($footerLogo['url']); ?>">
+                <?php
+                    echo '<img src="' . esc_url( $uploads['baseurl'] . '/sven/footer-logo.png' ) . '" href="/">';
+                ?>
             </div>
             <!-- Footer Logo -->
             <?php } ?>
-            
-            <?php if (! empty ($option['copyright_text'])) { ?>
-            <!-- Copyright -->
-            <div class="copyright-text">
-                <?php echo esc_html($option['copyright_text']); ?>
-            </div>
-            <!--/ Copyright -->
-            <?php } ?>
-
         </div>
         <!--/ Footer Branding -->
 
@@ -93,7 +87,9 @@ if (class_exists('Redux')) {
 
             <!-- CTA -->
             <div class="big-button">
-                <a target="<?php echo esc_attr($option['mail_button_target']) ?>" href="<?php echo esc_url($option['mail-button-url']); ?>"><?php echo esc_html($option['mail-button-text']) ?></a>
+                <a target="_blank" href="mailto:refresh@svengroup.com">
+                refresh@svengroup.com
+                </a>
             </div>
             <!--/ CTA -->
 
