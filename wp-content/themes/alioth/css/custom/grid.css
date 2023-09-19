@@ -1,0 +1,10 @@
+@media only screen and (min-width: 577px) {
+    body .c-col-12-sm {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    body .c-col-6-lg {
+        width: 50%;
+    }
+}
