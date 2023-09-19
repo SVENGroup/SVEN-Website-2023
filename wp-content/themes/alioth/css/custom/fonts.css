@@ -1,0 +1,20 @@
+@font-face {
+    font-family: JSBold;
+    src: url('../fonts/justSans/Bold.woff');
+}
+@font-face {
+    font-family: JSLight;
+    src: url('../fonts/justSans/Light.woff');
+}
+@font-face {
+    font-family: JSMedium;
+    src: url('../fonts/justSans/Medium.woff');
+}
+@font-face {
+    font-family: JSRegular;
+    src: url('../fonts/justSans/Regular.woff');
+}
+@font-face {
+    font-family: JSSemiBold;
+    src: url('../fonts/justSans/SemiBold.woff');
+}

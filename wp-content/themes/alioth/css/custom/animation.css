@@ -1,0 +1,12 @@
+.alternating {
+    animation-name: alternating-text;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes alternating-text {
+    90% {
+        display: none;
+    }
+}
