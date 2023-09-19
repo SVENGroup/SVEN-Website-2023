@@ -1,0 +1,105 @@
+body {
+    font-family: 'JSRegular';
+}
+
+/* HOMEPAGE */
+#homepage-custom-about {
+    max-width: 767px;
+}
+
+/* ABOUT SECTION */
+#homepage-custom-about .elementor-widget-container div {
+    font-size: 9vw;
+    letter-spacing: -0.06em;
+    color: #191b1d;
+}
+#homepage-custom-about .linked-line {
+    display: block;
+    text-align: start;
+    position: relative;
+    height: 10vw;
+}
+#homepage-custom-about .linked-line__through {
+    text-decoration: line-through;
+}
+#homepage-custom-about .linked-line a {
+    height: inherit;
+    position: relative;
+    display: inline-block;
+}
+#homepage-custom-about .linked-line a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #191b1d;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #fff;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    z-index: 1;
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+#homepage-custom-about .linked-line a:hover::before {
+    width: 0%;
+}
+#homepage-custom-about .linked-word {
+    position: relative;
+    display: inline-block;
+    transform: translate(0px, 0%);    
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+#homepage-custom-about .linked-line a:hover .linked-word {
+    transform: translate(0, -100%);
+}
+#homepage-custom-about .link-target {
+    transform: translate(0px, 0%);
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+    position: relative;
+    display: block;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#homepage-custom-about .linked-line a:hover .link-target {
+    transform: translate(0, -100%);
+}
+#homepage-custom-about .linked-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    column-gap: 35px;    
+}
+
+@media only screen and (min-width: 576px) {
+    #homepage-custom-about {
+        max-width: 90%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #homepage-custom-about {
+        max-width: 950px;
+    }        
+}
+@media only screen and (min-width: 1200px) {
+    #homepage-custom-about {
+        max-width: 1174px;
+    }    
+}
+@media only screen and (min-width: 1450px) {
+    #homepage-custom-about {
+        max-width: 1274px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    #homepage-custom-about {
+        max-width: 1500px;
+    }
+}

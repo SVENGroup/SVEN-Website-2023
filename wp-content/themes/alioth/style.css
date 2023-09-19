@@ -49,6 +49,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Normalize
 --------------------------------------------- */
 
+/*--------------------------------------------------------------
+# SVEN Custom CSS
+--------------------------------------------------------------*/
+@import url("css/sven.css");
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -432,9 +437,8 @@ select,
 optgroup,
 textarea {
     color: #191b1d;
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 h1,

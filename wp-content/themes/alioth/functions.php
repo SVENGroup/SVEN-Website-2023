@@ -178,3 +178,26 @@ require get_template_directory() . '/inc/alioth-add-plugins.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+// CUSTOM JS
+function ti_custom_javascript() {
+?>
+	<script>
+		window.onload = function () {
+			const texts = ['Too mainstream?', 'Too much?', 'Too complex?', 'Too noisy?', 'Too toxic?', 'Too fast?', 'Too overwhelming?'];
+			const element = document.getElementById('dynamic-text');
+
+			let i = 0;
+			const listener = e => {
+			i = i < texts.length - 1 ? i + 1 : 0;
+				element.innerHTML = texts[i];
+			};
+
+			element.innerHTML = texts[0];
+			element.addEventListener('animationiteration', listener, false);
+		};
+	</script>
+<?php
+}
+add_action('wp_head', 'ti_custom_javascript');
