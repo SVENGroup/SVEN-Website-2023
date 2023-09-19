@@ -41,9 +41,7 @@ if (class_exists('Redux')) {
             <?php if ($footerLogo) { ?>
             <!-- Footer Logo -->
             <div class="footer-logo">
-                <?php
-                    echo '<img src="' . esc_url( $uploads['baseurl'] . '/sven/footer-logo.png' ) . '" href="/">';
-                ?>
+                <img src="<?php echo esc_attr($footerLogo['url']); ?>">
             </div>
             <!-- Footer Logo -->
             <?php } ?>
@@ -78,7 +76,7 @@ if (class_exists('Redux')) {
         <?php if($bottomLeftWidget !== 'none') { ?>
 
         <!-- Footer Widget -->
-        <div class="c-col-6 footer-widget">
+        <div class="c-col-6 c-col-12-sm c-col-6-lg footer-widget">
             <?php if ($bottomLeftWidget === 'custom') { 
     
                 echo do_shortcode($option['bottom_left_custom']);
@@ -87,8 +85,8 @@ if (class_exists('Redux')) {
 
             <!-- CTA -->
             <div class="big-button">
-                <a target="_blank" href="mailto:refresh@svengroup.com">
-                refresh@svengroup.com
+                <a target="<?php echo esc_attr($option['mail_button_target']) ?>" href="<?php echo esc_url($option['mail-button-url']); ?>">
+                    <?php echo esc_html($option['mail-button-text']) ?>
                 </a>
             </div>
             <!--/ CTA -->
@@ -103,7 +101,7 @@ if (class_exists('Redux')) {
         <?php if($bottomRightWidget !== 'none') { ?>
 
         <!-- Footer Widget -->
-        <div class="c-col-6 footer-widget">
+        <div class="c-col-6 c-col-12-sm c-col-6-lg footer-widget footer__secondary-menu">
 
             <?php if ($bottomRightWidget === 'custom') { 
     
