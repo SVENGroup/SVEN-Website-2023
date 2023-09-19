@@ -4,7 +4,9 @@ body {
 
 /* HOMEPAGE */
 #homepage-custom-about {
-    max-width: 767px;
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* ABOUT SECTION */
@@ -77,12 +79,20 @@ body {
     width: fit-content;
     column-gap: 35px;    
 }
-
-@media only screen and (min-width: 576px) {
-    #homepage-custom-about {
-        max-width: 90%;
-    }
+.homepage-about__refreshing-wrapper {
+    position: relative;
 }
+.homepage-about__refreshing-wrapper .first-child {
+    margin-bottom: 10vw;
+}
+.elementor .homepage-about__refreshing-wrapper img {
+    position: absolute;
+    left: -18px;
+    bottom: 2vw;
+    height: auto;
+    max-height: 300px;
+}
+
 @media only screen and (min-width: 992px) {
     #homepage-custom-about {
         max-width: 950px;
@@ -91,7 +101,22 @@ body {
 @media only screen and (min-width: 1200px) {
     #homepage-custom-about {
         max-width: 1174px;
-    }    
+    }
+    #homepage-custom-about .elementor-widget-container div {
+        padding-left: 15px;
+    }
+    #homepage-custom-about .elementor-widget-container div.first-child,
+    #homepage-custom-about .elementor-widget-container div.last-child,
+    #homepage-custom-about .elementor-widget-container div.linked-grid .linked-line,
+    #homepage-custom-about .elementor-widget-container div.linked-word {
+        padding: 0;
+    }
+    .homepage-about__refreshing-wrapper ~ div {
+        padding: 0;
+    }
+    .elementor .homepage-about__refreshing-wrapper img {
+        left: -75px;
+    }
 }
 @media only screen and (min-width: 1450px) {
     #homepage-custom-about {
@@ -101,5 +126,8 @@ body {
 @media only screen and (min-width: 1600px) {
     #homepage-custom-about {
         max-width: 1500px;
+    }
+    .homepage-about__refreshing-wrapper .first-child {
+        margin-bottom: 115px;
     }
 }
