@@ -292,52 +292,7 @@ $dataSecondColor =  $option['classic_menu_dark_item_hover_color'];
 
                     </nav><!-- #site-navigation -->
 
-                    <!-- Header Widgets -->
-                    <div class="header-widgets">
-
-                        <?php if (( class_exists( 'WooCommerce' ) ) && ($shoppingCart !== 'hide') && (function_exists( 'woo_cart_but' )) ) { ?>
-
-                        <div class="header-widget <?php echo esc_attr($shoppingCart); ?>">
-
-                            <div class="alioth-atc-ic">
-                                <?php 
-                                echo do_shortcode("[woo_cart_but]"); 
-                               ?>
-
-                            </div>
-
-                        </div>
-
-                        <?php        }  ?>
-
-                        <!-- Header Widget-->
-                        <div class="header-widget">
-
-                            <?php if (class_exists('Redux')) { 
-
-                        if ($option['header_widget'] === 'button') { ?>
-
-                            <!--CTA Widget-->
-                            <div class="header-cta-but">
-                                <a target="<?php echo esc_attr($option['hw_button_target']) ?>" data-hover="<?php echo esc_attr($option['hw_button_text']) ?>" href="<?php echo esc_url($option['hw_button_url']) ?>">
-                                    <?php echo esc_html($option['hw_button_text']); ?>
-                                </a>
-                            </div>
-                            <!--CTA Widget-->
-                            <?php } elseif ($option['header_widget'] === 'custom') {
-                            
-                            echo do_shortcode($option['hw_custom']);
-                        
-                           }; ?>
-
-                            <?php }; ?>
-
-                        </div>
-                        <!-- Header Widget-->
-
-                    </div>
-                    <!-- /Header Widgets -->
-
+                    
                 </div>
 
             </header><!-- #masthead -->
