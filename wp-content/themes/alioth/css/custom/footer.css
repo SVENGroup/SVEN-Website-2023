@@ -10,6 +10,11 @@
     margin-top: 0px;
 }
 
+@media only screen and (max-width: 450px) {
+    #page .footer-widget .big-button a {
+        font-size: 25px;
+    }
+}
 @media only screen and (min-width: 700px) {
     .footer-widget .big-button {
         text-align: center;
