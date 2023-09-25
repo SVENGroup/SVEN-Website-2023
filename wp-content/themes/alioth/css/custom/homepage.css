@@ -64,7 +64,7 @@
     transition: all .7s ease;
     position: relative;
     display: block;
-    background: -webkit-linear-gradient(#eee, #333);
+    background: -webkit-linear-gradient(#EE32FF, #4700FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -88,6 +88,87 @@
     bottom: 2vw;
     height: auto;
     max-height: 300px;
+}
+
+/* BRANDS SECTION */
+#homepage__brands-column {
+    margin-top: 50px;
+}
+#homepage__brands-column img {
+    width: 150px;
+    margin: 0 auto 30px;
+}
+#homepage__brands-header .anim_char {
+    font-size: 75px;
+    line-height: 75px;
+}
+#homepage__brands-header .elementor-widget-image {
+    position: absolute;
+    top: 55px;
+    left: -15px;
+}
+#homepage-brands__header-content .content {
+		position: relative;
+    max-width: 270px;
+}
+#homepage-brands__header-content p{
+    font-size: 80px;
+    font-weight: 400;
+    color: #2D2D2D;
+    max-width: 255px;
+    font-family: 'JSRegular';
+}
+#homepage-brands__header-content img {
+    position: absolute;
+    right: -80px;
+    top: -50px;
+    max-width: 2558px;
+    max-height: 1750px;
+    height: auto;
+    width: 320px;
+}
+
+@media only screen and (min-width: 451px) {
+	#homepage__brands-column .alioth-clients.column-4 .a-client {
+			width: 33.333%;
+			padding: 0 10px;
+	}
+	#homepage__brands-column img {
+			margin: 0 auto;
+	}
+	#homepage__brands-column .alioth-clients{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#homepage__brands-column .alioth-clients.column-4 .a-client {
+			width: 100%;
+	}
+
+	#homepage__brands-column .a-client a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0 10px;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	#homepage-brands__header-content p {
+			font-size: 135px;
+	}
+	#homepage-brands__header-content .content {
+		max-width: 450px;
+	}
+	#homepage-brands__header-content img {
+    top: -130px;
+    width: 700px;
+    right: auto;
+    left: 0;
+	}
+	#homepage__brands-column .a-client {
+    margin: 50px auto 80px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -120,6 +201,26 @@
     .elementor .homepage-about__refreshing-wrapper img {
         left: -75px;
     }
+
+    /* BRANDS SECTION */
+    #homepage-brands__header-content img {
+		left: 165px;
+		top: -127px;
+	}
+	#homepage__brands-column .alioth-clients {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	#homepage__brands-column img {
+    	width: 160px;
+	}
+	#homepage__brands-column .alioth-clients.column-4 .a-client {
+		width: 100%;
+		margin-bottom: 85px;
+	}
+	#homepage__brands-column .elementor-widget-container .alioth-clients div:nth-of-type(3) img,
+	#homepage__brands-column .elementor-widget-container .alioth-clients div:nth-of-type(13) img {
+    	width: 100px;
+	}
 }
 @media only screen and (min-width: 1450px) {
     #homepage-custom-about {
