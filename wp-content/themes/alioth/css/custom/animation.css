@@ -11,10 +11,10 @@
     }
 }
 @keyframes textShine {
-    0% {
+    100% {
       background-position: 0% 50%;
     }
-    100% {
+    0% {
       background-position: 100% 50%;
     }
 }
