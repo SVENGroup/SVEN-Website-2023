@@ -6,5 +6,6 @@
 @import url("custom/animation.css");
 
 @import url("custom/navigation.css");
-@import url("custom/homepage.css");
 @import url("custom/footer.css");
+
+@import url("custom/pages/homepage.css");

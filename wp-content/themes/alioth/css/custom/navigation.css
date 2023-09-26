@@ -1,6 +1,19 @@
 #page .site-navigation.fullscreen {
     position: relative;
 }
+#page .site-logo {
+	width: 125px;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1200px) {
+	#page .site-logo {
+		width: 150px;
+	}
+	#page .site-branding {
+		top: -15px;
+	}
+}
 
 /* LARGER TABLET (992px) */
 @media only screen and (min-width: 901px) {

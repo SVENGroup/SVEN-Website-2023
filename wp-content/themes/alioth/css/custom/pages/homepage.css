@@ -64,9 +64,19 @@
     transition: all .7s ease;
     position: relative;
     display: block;
-    background: -webkit-linear-gradient(#EE32FF, #4700FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+        to right,
+        #EE32FF 20%,
+        #4700FF 30%,
+        #EE32FF 70%,
+        #4700FF 80%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .link-target {
     transform: translate(0, -100%);
@@ -128,6 +138,33 @@
     width: 320px;
 }
 
+/* AWARDS SECTION */
+#homepage__breakthrough-column p {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+}
+#homepage__breakthrough-column .content {
+    position: relative;
+    max-width: 330px;
+}
+#homepage__breakthrough-column .content img {
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+#homepage__awards-column {
+    margin-top: 100px;
+}
+#homepage__awards-column a:focus {
+    outline: none;
+}
+#homepage__blogs-column .heading-bg-text {
+    z-index: -1;
+}
+
+
+
 @media only screen and (min-width: 451px) {
 	#homepage__brands-column .alioth-clients.column-4 .a-client {
 			width: 33.333%;
@@ -155,20 +192,31 @@
 
 @media only screen and (min-width: 700px) {
 	#homepage-brands__header-content p {
-			font-size: 135px;
+		font-size: 135px;
 	}
 	#homepage-brands__header-content .content {
 		max-width: 450px;
 	}
 	#homepage-brands__header-content img {
-    top: -130px;
-    width: 700px;
-    right: auto;
-    left: 0;
+        top: -130px;
+        width: 700px;
+        right: auto;
+        left: 0;
 	}
 	#homepage__brands-column .a-client {
-    margin: 50px auto 80px;
+        margin: 50px auto 80px;
 	}
+
+    #homepage__awards-column {
+        margin-top: 150px;
+    }
+    #homepage__breakthrough-column .content {
+        max-width: 700px;
+    }
+    #homepage__breakthrough-column .content img {
+        left: -25px;
+        top: 0;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -176,6 +224,25 @@
         max-width: 950px;
     }        
 }
+
+@media only screen and (min-width: 1024px) {
+	#homepage__breakthrough-column p {
+		font-size: 101px;
+	}
+	#homepage__breakthrough-column .content img {
+		left: -60px;
+		top: -55px;
+		max-width: 2500px;
+		max-height: 1000px;
+		height: auto;
+		width: 950px;
+	}
+	#homepage__awards-column {
+        margin-top: 180px;
+	}
+}
+
+
 @media only screen and (min-width: 1200px) {
     #homepage-custom-about {
         max-width: 1174px;
@@ -221,6 +288,16 @@
 	#homepage__brands-column .elementor-widget-container .alioth-clients div:nth-of-type(13) img {
     	width: 100px;
 	}
+
+    #homepage__awards-column {
+        margin-top: 220px;
+    }
+    
+    #homepage__breakthrough-column .content img {
+        left: -80px;
+        top: -70px;
+        width: 1135px;
+    }
 }
 @media only screen and (min-width: 1450px) {
     #homepage-custom-about {
