@@ -2,8 +2,6 @@
 /* HOMEPAGE */
 #homepage-custom-about {
     max-width: 90%;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 /* ABOUT SECTION */
@@ -126,7 +124,7 @@
     font-weight: 400;
     color: #2D2D2D;
     max-width: 255px;
-    font-family: 'JSRegular';
+    font-family: 'Just Sans';
 }
 #homepage-brands__header-content img {
     position: absolute;

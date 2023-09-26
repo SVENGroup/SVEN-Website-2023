@@ -1,20 +1,35 @@
 @font-face {
-    font-family: JSBold;
-    src: url('../fonts/justSans/Bold.woff');
+    font-family: 'Just Sans';
+    src: url('../fonts/justSans/Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: JSLight;
-    src: url('../fonts/justSans/Light.woff');
+    font-family: 'Just Sans';
+    src: url('../fonts/justSans/Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: JSMedium;
-    src: url('../fonts/justSans/Medium.woff');
+    font-family: 'Just Sans';
+    src: url('../fonts/justSans/Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: JSRegular;
-    src: url('../fonts/justSans/Regular.woff');
+    font-family: 'Just Sans';
+    src: url('../fonts/justSans/Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-    font-family: JSSemiBold;
-    src: url('../fonts/justSans/SemiBold.woff');
+    font-family: 'Just Sans';
+    src: url('../fonts/justSans/SemiBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }

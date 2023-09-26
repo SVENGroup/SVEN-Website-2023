@@ -73,15 +73,15 @@
         height: 90vh;
     }
     #page .site-navigation.fullscreen .menu.main-menu {
+        position: relative;
         top: 60px;
+    }
+    #page .site-navigation.fullscreen .menu.main-menu > li.menu-item {
+        font-size: 30px;
+        line-height: 50px;
     }
     #page .menu-widget-right,
     #page .menu-widget-left {
-        bottom: 0;
-        position: absolute;
-    }
-    #page .site-navigation.fullscreen .menu.main-menu > li.menu-item {
-        font-size: 35px;
-        line-height: 60px;        
+        bottom: 17%;
     }
 }

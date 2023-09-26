@@ -122,7 +122,7 @@ $dataSecondColor =  $option['classic_menu_dark_item_hover_color'];
         <?php } ?>
 
         <?php wp_body_open(); ?>
-        <div id="page" class="site <?php echo esc_attr($elementor_check) ?>">
+        <div id="page" class="sven-website site <?php echo esc_attr($elementor_check) ?>">
             <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'alioth' ); ?></a>
 
             <?php if ($pageLoader) { ?>
