@@ -58,7 +58,7 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .contact-gradient span {
     background: linear-gradient( to right, #4700FF 30%, #5EEAEB 70%);
@@ -67,7 +67,7 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .clients-gradient span {
     background: linear-gradient( to right, #5EEAEB 30%, #FE3E4B 70%);
@@ -76,7 +76,7 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .culture-gradient span {
     background: linear-gradient( to right, #FE3E4B 30%, #F9F3AD 70%);
@@ -85,7 +85,7 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .work-gradient span {
     background: linear-gradient( to right, #F9F3AD 30%, #5EDBEB 70%);
@@ -94,7 +94,7 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .service-gradient span {
     background: linear-gradient( to right, #5EDBEB 30%, #C9ABF9 70%);
@@ -103,7 +103,7 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite;
+    animation: textShine 2s ease-in-out infinite alternate;
 }
 #homepage-custom-about .about-gradient {
     color: #EE32FF;

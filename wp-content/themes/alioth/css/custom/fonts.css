@@ -21,14 +21,14 @@
 }
 @font-face {
     font-family: 'Just Sans';
-    src: url('../fonts/justSans/Bold.woff') format('woff');
+    src: url('../fonts/justSans/SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Just Sans';
-    src: url('../fonts/justSans/SemiBold.woff') format('woff');
+    src: url('../fonts/justSans/Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
