@@ -1,0 +1,20 @@
+.alternating {
+    animation-name: alternating-text;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes alternating-text {
+    90% {
+        display: none;
+    }
+}
+@keyframes textShine {
+    100% {
+      background-position: 0% 50%;
+    }
+    0% {
+      background-position: 100% 50%;
+    }
+}
