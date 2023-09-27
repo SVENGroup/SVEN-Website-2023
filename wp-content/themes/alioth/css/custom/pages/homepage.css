@@ -17,7 +17,8 @@
     height: 10vw;
 }
 #homepage-custom-about .linked-line__through {
-    text-decoration: line-through;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 5px;
 }
 #homepage-custom-about .linked-line a {
     height: inherit;
@@ -35,7 +36,8 @@
     -webkit-transition: all .7s ease;
     -o-transition: all .7s ease;
     transition: all .7s ease;
-    text-decoration: underline #191b1d;
+    text-decoration-line: underline;
+    text-decoration-color: #191b1d;
     text-decoration-skip-ink: auto;
     text-decoration-thickness: 4px;
 }
@@ -52,76 +54,88 @@
     display: block;
 }
 #homepage-custom-about .linked-line a:hover .about-gradient span {
-    background: linear-gradient( to right, #EE32FF 30%, #4700FF 70% );
+    background: linear-gradient( to right, #EE32FF 10%, #4700FF 20%, #EE32FF 30%, #4700FF 40%, #EE32FF 50%, #4700FF 60%,#EE32FF 70%, #4700FF 80%, #EE32FF 90%, #4700FF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+    animation: textShine 7s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .contact-gradient span {
-    background: linear-gradient( to right, #4700FF 30%, #5EEAEB 70%);
+    background: linear-gradient( to right, #4700ff 10%, #5eeaeb 20%, #4700FF 30%, #5EEAEB 40%, #4700FF 50%, #5EEAEB 60%, #4700FF 70%, #5EEAEB 80%, #4700FF 90%, #5EEAEB 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+    animation: textShine 7s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .clients-gradient span {
-    background: linear-gradient( to right, #5EEAEB 30%, #FE3E4B 70%);
+    background: linear-gradient( to right, #5EEAEB 10%, #FE3E4B 20%, #5EEAEB 30%, #FE3E4B 40%, #5EEAEB 50%, #FE3E4B 60%, #5EEAEB 70%, #FE3E4B 80%, #5EEAEB 90%, #FE3E4B 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+    animation: textShine 7s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .culture-gradient span {
-    background: linear-gradient( to right, #FE3E4B 30%, #F9F3AD 70%);
+    background: linear-gradient( to right, #FE3E4B 10%, #F9F3AD 20%, #FE3E4B 30%, #F9F3AD 40%, #FE3E4B 50%, #F9F3AD 60%, #FE3E4B 70%, #F9F3AD 80%, #FE3E4B 90%, #F9F3AD 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+    animation: textShine 7s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .work-gradient span {
-    background: linear-gradient( to right, #F9F3AD 30%, #5EDBEB 70%);
+    background: linear-gradient( to right, #F9F3AD 10%, #5EDBEB 20%, #F9F3AD 30%, #5EDBEB 40%, #F9F3AD 50%, #5EDBEB 60%, #F9F3AD 70%, #5EDBEB 80%, #F9F3AD 90%, #5EDBEB 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+    animation: textShine 7s ease-in-out infinite alternate;
 }
 #homepage-custom-about .linked-line a:hover .service-gradient span {
-    background: linear-gradient( to right, #5EDBEB 30%, #C9ABF9 70%);
+    background: linear-gradient( to right, #5EDBEB 10%, #C9ABF9 20%, #5EDBEB 30%, #C9ABF9 40%, #5EDBEB 50%, #C9ABF9 60%, #5EDBEB 70%, #C9ABF9 80%, #5EDBEB 90%, #C9ABF9 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     background-size: 500% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+    animation: textShine 7s ease-in-out infinite alternate;
 }
 #homepage-custom-about .about-gradient {
-    color: #EE32FF;
+    background: -webkit-linear-gradient(#EE32FF, #4700FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #homepage-custom-about .contact-gradient {
-    color: #4700FF;
+    background: -webkit-linear-gradient(#4700ff, #5eeaeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #homepage-custom-about .clients-gradient {
-    color: #5EEAEB;
+    background: -webkit-linear-gradient(#5EEAEB, #FE3E4B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #homepage-custom-about .culture-gradient {
-    color: #FE3E4B;
+    background: -webkit-linear-gradient(#FE3E4B, #F9F3AD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #homepage-custom-about .work-gradient {
-    color: #F9F3AD;
+    background: -webkit-linear-gradient(#F9F3AD, #5EDBEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #homepage-custom-about .service-gradient {
-    color: #5EDBEB;
+    background: -webkit-linear-gradient(#5EDBEB, #C9ABF9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -147,6 +161,12 @@
     height: auto;
     max-height: 300px;
 }
+
+/* SERVICES SECTION */
+#homepage__services-column p {
+    line-height: 40px;
+}
+
 
 /* BRANDS SECTION */
 #homepage__brands-column {
@@ -239,7 +259,21 @@
 }
 
 @media only screen and (min-width: 700px) {
-	#homepage-brands__header-content p {
+    #homepage-custom-about .elementor-widget-container div {
+        font-size: 40px;
+    }
+    .elementor .homepage-about__refreshing-wrapper img {
+        max-height: 100px;
+        bottom: 9px;
+        left: -23px;
+    }
+    #homepage-custom-about .elementor-widget-container .first-child {
+        margin-bottom: 50px;
+    }
+    #homepage-custom-about .linked-line {
+        height: 50px;
+    }
+    #homepage-brands__header-content p {
 		font-size: 135px;
 	}
 	#homepage-brands__header-content .content {
@@ -274,7 +308,13 @@
 }
 
 @media only screen and (min-width: 1024px) {
-	#homepage__breakthrough-column p {
+    #homepage-custom-about .elementor-widget-container div {
+        font-size: 50px;
+    }
+    #homepage-custom-about .linked-line {
+        height: 60px;
+    }
+    #homepage__breakthrough-column p {
 		font-size: 101px;
 	}
 	#homepage__breakthrough-column .content img {
@@ -292,6 +332,9 @@
 
 
 @media only screen and (min-width: 1200px) {
+    #homepage-custom-about .linked-line {
+        height: 80.5px;
+    }
     #homepage-custom-about {
         max-width: 1174px;
     }
@@ -300,6 +343,7 @@
     }
     #homepage-custom-about .elementor-widget-container div {
         padding-left: 15px;
+        font-size: 70px;
     }
     #homepage-custom-about .elementor-widget-container div.first-child,
     #homepage-custom-about .elementor-widget-container div.last-child,
@@ -307,14 +351,17 @@
     #homepage-custom-about .elementor-widget-container div.linked-word {
         padding: 0;
     }
-    #homepage-custom-about .linked-word {
-        text-decoration-thickness: 7px;
+    #homepage-custom-about .linked-word,
+    #homepage-custom-about .linked-line__through {
+        text-decoration-thickness: 6px;
     }
     .homepage-about__refreshing-wrapper ~ div {
         padding: 0;
     }
     .elementor .homepage-about__refreshing-wrapper img {
-        left: -75px;
+        max-height: 140px;
+        bottom: 11px;
+        left: -28px;
     }
 
     /* BRANDS SECTION */
@@ -351,15 +398,15 @@
     #homepage-custom-about {
         max-width: 1274px;
     }
-    #homepage-custom-about .linked-line {
+    /* #homepage-custom-about .linked-line {
         height: 8vw;
     }
     #homepage-custom-about .elementor-widget-container div {
         font-size: 7vw;
-    }
-    .elementor .homepage-about__refreshing-wrapper img {
+    } */
+    /* .elementor .homepage-about__refreshing-wrapper img {
         max-height: 275px;
-    }
+    } */
 }
 @media only screen and (min-width: 1600px) {
     #homepage-custom-about {
