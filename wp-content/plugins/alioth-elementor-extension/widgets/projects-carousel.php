@@ -257,7 +257,7 @@ class AliothProjectsCarousel extends Widget_Base {
 
     ?>
 
-<!--Alioth Recent Works-->
+<!--SVEN Recent Works-->
 <div data-navigate="scroll" class="a-recent-works light">
 
     <?php if ($settings['background_text_show'] === 'yes') { ?>
@@ -279,13 +279,11 @@ class AliothProjectsCarousel extends Widget_Base {
 
     <!--Works Wrapper-->
     <div class="recent-works-wrapper">
-
         <?php foreach ($projects_list as $selected_project) {  
             $project = $selected_project['select_project'];
         ?>
         <!--Project-->
         <div class="ar-work">
-
             <!--Project URL--><a href="<?php echo esc_url(get_the_permalink($project)) ?>">
 
                 <!--Project Image-->
@@ -335,9 +333,12 @@ class AliothProjectsCarousel extends Widget_Base {
                 <!--Project Category-->
                 <div class="ar-work-cat"><?php 
                         $terms = get_the_terms( $project, 'project-categories' ); 
-                        foreach($terms as $term) {
-                        echo '<span>' . $term->name . '</span>';
-                        }
+                        $value = get_field("excerpt", $project);
+                        echo $value;
+
+                        // foreach($terms as $term) {
+                        //     echo '<span>' . $term->name . '</span>';
+                        // }
                     ?></div>
                 <!--/Project Category-->
                 <?php } ?>
@@ -352,7 +353,7 @@ class AliothProjectsCarousel extends Widget_Base {
     <!--/Works Wrapper-->
 
 </div>
-<!--/Alioth Recent Works-->
+<!--/SVEN Recent Works-->
 
 
 <?php

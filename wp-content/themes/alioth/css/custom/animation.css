@@ -18,3 +18,11 @@
       background-position: 100% 50%;
     }
 }
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

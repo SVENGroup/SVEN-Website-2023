@@ -167,6 +167,17 @@
     line-height: 40px;
 }
 
+/* RECENT WORKS */
+.recent-works-wrapper .ar-work-cat {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 10px 0px 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 
 /* BRANDS SECTION */
 #homepage__brands-column {
@@ -362,6 +373,15 @@
         max-height: 140px;
         bottom: 11px;
         left: -28px;
+    }
+
+    .recent-works-bg-text {
+        margin-left: -500px;
+    }
+    .recent-works-wrapper .ar-work {
+        -ms-flex-preferred-size: 30vw;
+        flex-basis: 30vw;
+        min-width: 30vw;
     }
 
     /* BRANDS SECTION */
