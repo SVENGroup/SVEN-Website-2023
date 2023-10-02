@@ -4,3 +4,10 @@
 .text-dark-blue {
     color: #4017AC !important;
 }
+.text-gradient1 {
+    background: linear-gradient(92deg, #5EDBEB 0%, #5480F3, #4E4FF7, #4601FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    animation: hue 2s infinite linear;
+}
