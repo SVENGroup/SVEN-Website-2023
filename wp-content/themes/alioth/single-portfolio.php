@@ -60,6 +60,54 @@ $pageTransitions = $option['page_transitions_active'];
 
 ?>
 
+<style>
+	.project-banner__with-text {
+		position: relative;
+		padding-top: 105px;
+	}
+
+	.project-page-header.style_2 .project-featured-image,
+	.project-page-header.style_1 .project-featured-image {
+		height: auto;
+	}
+	.project-page-header.style_2 .project-featured-image{
+		margin-bottom: 115px;
+	}
+	.project-page-header.style_1 .project-featured-image{
+		margin-bottom: 60px;
+	}
+	
+	.project-page-header.style_2 .project-head {
+		bottom: -115px;
+	}
+	.project-banner__with-text .project-featured-video .plyr__video-embed,
+	.project-banner__with-text .project-featured-video .plyr__video-wrapper--fixed-ratio {
+		width: 100% !important;
+	}
+	@media only screen and (min-width: 992px) {
+		.project-banner__with-text {
+			padding-top: 0px;
+		}		
+	}
+	@media only screen and (min-width: 1200px) {
+		.project-page-header.style_1 .project-banner__with-text .project-featured-image,
+		.project-page-header.style_2 .project-banner__with-text .project-featured-image{
+			height: calc(100vh - 135px);
+		}
+		.project-page-header.style_2 .project-banner__with-text .project-featured-image {
+			margin-bottom: 150px;
+		}
+		.project-page-header.style_2 .project-banner__with-text .project-head {
+			bottom: -160px;
+		}
+		.project-page-header.style_2 .project-banner__with-text h1.big-title,
+		.project-page-header.style_1 .project-banner__with-text h1.big-title {
+			line-height: normal;
+			font-size: 70px;
+		}
+	}
+</style>
+
 <main id="primary" class="site-main" <?php echo esc_attr($barbaArgs) ?>>
 
     <?php
@@ -89,58 +137,65 @@ $pageTransitions = $option['page_transitions_active'];
 
         <!-- Project Page Header -->
         <div data-animate="<?php echo esc_attr($animate); ?>" class="project-page-header style_1">
+			
+			<!-- Project Banner with Text -->
+			<div class="project-banner__with-text">
+				<!-- Project Header Image -->
+				<div class="project-featured-image">
 
-            <!-- Project Header Image -->
-            <div class="project-featured-image">
+					<?php if (get_field('featured_image_type') === 'video') { ?>
 
-                <?php if (get_field('featured_image_type') === 'video') { ?>
+					<!--Video-->
+					<div class="project-featured-video">
 
-                <!--Video-->
-                <div class="project-featured-video">
+						<?php if (get_field('video_provider') === 'vimeo') { ?>
 
-                    <?php if (get_field('video_provider') === 'vimeo') { ?>
+						<!--Video Attributes-->
+						<div class="pph-video" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
+						<!--/Video Attributes-->
 
-                    <!--Video Attributes-->
-                    <div class="pph-video" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
-                    <!--/Video Attributes-->
+						<?php } elseif (get_field('video_provider') === 'youtube') { ?>
 
-                    <?php } elseif (get_field('video_provider') === 'youtube') { ?>
+						<!--Video Attributes-->
+						<div class="pph-video" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
+						<!--/Video Attributes-->
 
-                    <!--Video Attributes-->
-                    <div class="pph-video" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
-                    <!--/Video Attributes-->
+						<?php } elseif (get_field('video_provider') === 'self_hosted') { ?>
 
-                    <?php } elseif (get_field('video_provider') === 'self_hosted') { ?>
+						<video class="alioth-project-video" src="<?php echo esc_attr(get_field('upload_video')); ?>" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
 
-                    <video class="alioth-project-video" src="<?php echo esc_attr(get_field('upload_video')); ?>" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
-
-                    <?php } ?>
+						<?php } ?>
 
 
-                </div>
-                <!--/Video-->
+					</div>
+					<!--/Video-->
 
-                <?php } else { ?>
+					<?php } else { ?>
 
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>">
 
-                <?php } ?>
+					<?php } ?>
 
-            </div>
-            <!-- /Project Header Image -->
+				</div>
+				<!-- /Project Header Image -->	
+				
+				<!-- Project Title & Cat -->
+				<div class="project-details project-details__title">
+					<div class="project-title">
 
+						<!-- Project Title -->
+						<h1 class="big-title"><?php echo get_the_title(); ?></h1>
+						<!-- Project Title -->
+
+					</div>
+				</div>
+				<!-- /Project Title & Cat -->		
+				
+			</div>
+			<!-- /Project Banner with Text -->	
+			
             <!-- Project Details -->
             <div class="project-details">
-
-                <!-- Project Title & Cat -->
-                <div class="project-title">
-
-                    <!-- Project Title -->
-                    <h1 class="big-title"><?php echo get_the_title(); ?></h1>
-                    <!-- Project Title -->
-
-                </div>
-                <!-- /Project Title & Cat -->
 
                 <!-- Project Metas -->
                 <div class="project-metas">
@@ -197,68 +252,72 @@ $pageTransitions = $option['page_transitions_active'];
 
         <!-- Project Page Header -->
         <div data-animate="<?php echo esc_attr($animate); ?>" class="project-page-header style_2">
+            <!-- Project Banner With Text -->
+            <div class="project-banner__with-text">
+                <!-- Project Header Image -->
+                <div class="project-featured-image">
 
-            <!-- Project Header Image -->
-            <div class="project-featured-image">
+                    <?php if (get_field('featured_image_type') === 'video') { ?>
 
-                <?php if (get_field('featured_image_type') === 'video') { ?>
+                    <!--Video-->
+                    <div class="project-featured-video">
 
-                <!--Video-->
-                <div class="project-featured-video">
+                        <?php if (get_field('video_provider') === 'vimeo') { ?>
 
-                    <?php if (get_field('video_provider') === 'vimeo') { ?>
+                        <!--Video Attributes-->
+                        <div class="pph-video" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
+                        <!--/Video Attributes-->
 
-                    <!--Video Attributes-->
-                    <div class="pph-video" data-plyr-provider="vimeo" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
-                    <!--/Video Attributes-->
+                        <?php } elseif (get_field('video_provider') === 'youtube') { ?>
 
-                    <?php } elseif (get_field('video_provider') === 'youtube') { ?>
+                        <!--Video Attributes-->
+                        <div class="pph-video" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
+                        <!--/Video Attributes-->
 
-                    <!--Video Attributes-->
-                    <div class="pph-video" data-plyr-provider="youtube" data-plyr-embed-id="<?php echo esc_attr(get_field('video_id')); ?>"></div>
-                    <!--/Video Attributes-->
+                        <?php } elseif (get_field('video_provider') === 'self_hosted') { ?>
 
-                    <?php } elseif (get_field('video_provider') === 'self_hosted') { ?>
+                        <video class="alioth-project-video" src="<?php echo esc_attr(get_field('upload_video')); ?>" autoplay="true" loop="true" muted="muted" playsinline="true" controlslist="nodownload"></video>
 
-                    <video class="alioth-project-video" src="<?php echo esc_attr(get_field('upload_video')); ?>" autoplay="true" loop="true" muted="muted" playsinline="true" controlslist="nodownload"></video>
+                        <?php } ?>
+
+                    </div>
+                    <!--/Video-->
+
+                    <?php } else { ?>
+
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>">
 
                     <?php } ?>
 
                 </div>
-                <!--/Video-->
+                <!-- /Project Header Image -->
 
-                <?php } else { ?>
+                <!-- Project Head -->
+                <div class="project-head">
 
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+                    <!-- Project Title -->
+                    <div class="project-title">
+                        <h1 class="big-title"><?php echo get_the_title(); ?></h1>
+                    </div>
+                    <!-- /Project Title -->
 
-                <?php } ?>
+                    <!-- Project Category -->
+                    <div class="project-cat"><?php 
+                            $terms = get_the_terms( $post->ID, 'project-categories' ); 
+                            if ($terms) {
+                                
+                            foreach($terms as $term) {
+                                echo '<span>' . esc_html($term->name) . '</span>';
+                            }
+                            } ?>
+                    </div>
+                    <!-- /Project Category -->
 
-            </div>
-            <!-- /Project Header Image -->
-
-            <!-- Project Head -->
-            <div class="project-head">
-
-                <!-- Project Title -->
-                <div class="project-title">
-                    <h1 class="big-title"><?php echo get_the_title(); ?></h1>
                 </div>
-                <!-- /Project Title -->
+                <!-- /Project Head -->
+            </div>    
+            <!-- /Project Banner With Text -->
 
-                <!-- Project Category -->
-                <div class="project-cat"><?php 
-                        $terms = get_the_terms( $post->ID, 'project-categories' ); 
-                        if ($terms) {
-                            
-                        foreach($terms as $term) {
-                            echo '<span>' . esc_html($term->name) . '</span>';
-                        }
-                        } ?>
-                </div>
-                <!-- /Project Category -->
-
-            </div>
-            <!-- /Project Head -->
 
             <!-- Project Details -->
             <div class="project-details">
