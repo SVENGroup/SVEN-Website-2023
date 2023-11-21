@@ -32,14 +32,11 @@ body.elementor-page-2881 .elementor-element .e-con-inner {
 
 
 @media only screen and (min-width: 451px) {
-    .project-page-header.style_2 .project-featured-image {
-        margin-bottom: 0px;
-    }
     .project-banner__with-text {
         padding-bottom: 115px;
     }
     .project-page-header.style_2 .project-head {
-        bottom: -60px;
+        bottom: -175px;
     }
 }
 
