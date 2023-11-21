@@ -60,54 +60,6 @@ $pageTransitions = $option['page_transitions_active'];
 
 ?>
 
-<style>
-	.project-banner__with-text {
-		position: relative;
-		padding-top: 105px;
-	}
-
-	.project-page-header.style_2 .project-featured-image,
-	.project-page-header.style_1 .project-featured-image {
-		height: auto;
-	}
-	.project-page-header.style_2 .project-featured-image{
-		margin-bottom: 115px;
-	}
-	.project-page-header.style_1 .project-featured-image{
-		margin-bottom: 60px;
-	}
-	
-	.project-page-header.style_2 .project-head {
-		bottom: -115px;
-	}
-	.project-banner__with-text .project-featured-video .plyr__video-embed,
-	.project-banner__with-text .project-featured-video .plyr__video-wrapper--fixed-ratio {
-		width: 100% !important;
-	}
-	@media only screen and (min-width: 992px) {
-		.project-banner__with-text {
-			padding-top: 0px;
-		}		
-	}
-	@media only screen and (min-width: 1200px) {
-		.project-page-header.style_1 .project-banner__with-text .project-featured-image,
-		.project-page-header.style_2 .project-banner__with-text .project-featured-image{
-			height: calc(100vh - 135px);
-		}
-		.project-page-header.style_2 .project-banner__with-text .project-featured-image {
-			margin-bottom: 150px;
-		}
-		.project-page-header.style_2 .project-banner__with-text .project-head {
-			bottom: -160px;
-		}
-		.project-page-header.style_2 .project-banner__with-text h1.big-title,
-		.project-page-header.style_1 .project-banner__with-text h1.big-title {
-			line-height: normal;
-			font-size: 70px;
-		}
-	}
-</style>
-
 <main id="primary" class="site-main" <?php echo esc_attr($barbaArgs) ?>>
 
     <?php
